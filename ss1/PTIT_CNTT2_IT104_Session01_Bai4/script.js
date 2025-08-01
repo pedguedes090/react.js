@@ -1,4 +1,4 @@
-function checkPatity(a){
+let checkPatity = (a) => {
     if(isNaN(a)){
         console.log("Khong phai la so");
     }else if(a % 2 === 0){
@@ -6,7 +6,7 @@ function checkPatity(a){
     }else{
         console.log("So le");
     }
-}
+};
 
 checkPatity(4);
 checkPatity(5);

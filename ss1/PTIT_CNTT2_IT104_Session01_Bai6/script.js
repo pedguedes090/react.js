@@ -1,4 +1,4 @@
-function createUser(name,age =18,role =`user`){
+let createUser = (name,age =18,role =`user`)=>{
     console.log(`Name: ${name}`);
     console.log(`Age: ${age}`);
     console.log(`Role: ${role}`);
