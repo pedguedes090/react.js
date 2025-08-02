@@ -1,5 +1,4 @@
 
-// Phiên bản ngắn gọn hơn sử dụng reduce
 const groupAnagramsReduce = (strs) => {
     return Object.values(
         strs.reduce((acc, str) => {
