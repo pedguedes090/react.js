@@ -1,4 +1,3 @@
-
 const groupAnagramsReduce = (strs) => {
     return Object.values(
         strs.reduce((acc, str) => {
