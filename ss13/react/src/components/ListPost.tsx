@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import DetailPost from './DetailPost';
 class post {
     id: number;
@@ -13,7 +13,7 @@ class post {
     }
 }
 
-export default class ListPost extends PureComponent {
+export default class ListPost extends Component {
     posts: post[] = [
         new post(1, "Tại sao nên học ReactJS ", "Học ReactJS để đi làm", "David"),
         new post(2, "Props trong ReactJS", "CProps giúp truyền dữ liệu từ component con xuống component cha", "Linda"),

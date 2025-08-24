@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 
 interface Props {
     id: number;
@@ -7,7 +7,7 @@ interface Props {
     author: string;
 }
 
-export default class DetailPost extends PureComponent<Props> {
+export default class DetailPost extends Component<Props> {
     constructor(props: Props) {
         super(props)
 

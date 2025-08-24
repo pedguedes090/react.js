@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 
 interface Props {
     id: number;
@@ -8,7 +8,7 @@ interface Props {
 }
 
 
-export default class Child extends PureComponent<Props> {
+export default class Child extends Component<Props> {
     constructor(props: Props) {
         super(props)
     }
