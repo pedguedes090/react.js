@@ -1,0 +1,89 @@
+.nav {
+  width: 1025px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+button {
+  background-color: rgba(37, 99, 235, 1);
+  border: 1px solid rgba(173, 196, 247, 1);
+  color: white;
+}
+.select-input {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  width: fit-content;
+}
+
+tr {
+  width: fit-content;
+  display: flex;
+  width: 1026px;
+  border-bottom: 1px solid rgba(237, 238, 241, 1);
+}
+td,th {
+  padding: 10px 20px;
+  width: fit-content;
+  color: rgb(153, 165, 165);
+}
+table {
+  border-collapse: collapse;
+  /* width: 1000px; */
+  display: flex;
+}
+
+.stt {
+  width: 30px;
+}
+.msv {
+  width: 100px;
+}
+.tensv {
+  width: 150px;
+}
+.cn {
+  width: 193.56px;
+}
+.cnc {
+  width: 50px;
+}
+.chan {
+  background-color: rgba(249, 240, 255, 1);
+  color: rgba(93, 42, 176, 1);
+  border: rgba(222, 195, 249, 1);
+  font-size: 0.75em;
+}
+.sua {
+  background-color: rgba(255, 247, 230, 1);
+  color: rgba(241, 186, 97, 1);
+  border: rgba(255, 223, 171, 1);
+  font-size: 0.75em;
+}
+.xoa {
+  background-color: rgba(255,241,240,1);
+  color: rgba(220,77,105,1);
+  border: rgba(255,203,201,1);
+  font-size: 0.75em;
+}
+
+.page {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  gap: 10px;
+}
+.page > :nth-child(n) {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(153, 165, 165);
+  border-radius: 50%;
+}
