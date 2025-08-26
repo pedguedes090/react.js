@@ -1,0 +1,19 @@
+.theme-switcher {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.theme-switcher.light {
+  background: #fff;
+  color: #000;
+}
+.theme-switcher.dark {
+  background: #222;
+  color: #fff;
+}

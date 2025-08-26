@@ -1,0 +1,145 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+    gap: 15px;
+    transition: background-color 0.2s;
+}
+
+.cart-item:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #333;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.cart-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.cart-item-name {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.3;
+}
+
+.cart-item-price {
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #333;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.quantity-btn {
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    color: #bbb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.quantity-btn:hover {
+    background-color: #555;
+    color: white;
+}
+
+.quantity-btn:active {
+    transform: scale(0.95);
+}
+
+.quantity {
+    min-width: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 0 5px;
+}
+
+.remove-btn {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(231, 76, 60, 0.8);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.remove-btn:hover {
+    background-color: rgba(231, 76, 60, 1);
+    transform: scale(1.05);
+}
+
+.remove-btn:active {
+    transform: scale(0.95);
+}
+
+/* Animation cho item khi thêm vào */
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cart-item {
+    animation: fadeInSlide 0.3s ease-out;
+}
