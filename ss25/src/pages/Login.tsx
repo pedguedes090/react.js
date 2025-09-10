@@ -1,0 +1,108 @@
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+
+interface User {
+  id: number
+  email: string
+  password: string
+}
+
+export default function Login() {
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const [errorMessage, setErrorMessage] = useState('')
+  
+  const navigate = useNavigate()
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+
+    setErrorMessage('')
+
+    if (!email) {
+      setErrorMessage('Email không được để trống')
+      return
+    }
+    if (!password) {
+      setErrorMessage('Mật khẩu không được để trống')
+      return
+    }
+    const savedUsers = localStorage.getItem('users')
+    
+    if (!savedUsers) {
+      setErrorMessage('Không tìm thấy tài khoản nào')
+      return
+    }
+    const userList: User[] = JSON.parse(savedUsers)
+    const foundUser = userList.find((user: User) => 
+      user.email === email && user.password === password
+    )
+    
+    if (foundUser) {
+      localStorage.setItem('currentUser', JSON.stringify(foundUser))
+      alert('Đăng nhập thành công!')
+      navigate('/')
+    } else {
+      setErrorMessage('Email hoặc mật khẩu không đúng')
+    }
+  }
+
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
+      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h1 className="text-2xl font-bold mb-6 text-center">Đăng nhập tài khoản</h1>
+        
+        {}
+        {errorMessage && (
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+            {errorMessage}
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+          <div>
+            <label htmlFor="email" className="font-medium">Email của bạn</label>
+            <input
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="name@company.com"
+              className="border rounded px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="password" className="font-medium">Mật khẩu</label>
+            <input
+              id="password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="*****"
+              className="border rounded px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+
+          <button 
+            type="submit"
+            className="bg-blue-600 text-white rounded py-2 mt-4 hover:bg-blue-700 font-semibold"
+          >
+            Đăng nhập
+          </button>
+
+          <div className="text-center mt-4">
+            <p className="text-sm text-gray-600">
+              Chưa có tài khoản? {' '}
+              <Link to="/register" className="text-blue-600 hover:text-blue-800 font-medium">
+                Đăng ký tại đây
+              </Link>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  )
+}
