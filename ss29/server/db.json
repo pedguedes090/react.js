@@ -1,0 +1,100 @@
+{
+  
+  "products": [
+    {
+      "id": "1",
+      "name": "Cam",
+      "img": "img/cam.jpg",
+      "price": "10000",
+      "quantity": "100",
+      "createAt": "2025"
+    },
+    {
+      "id": "2",
+      "name": "Táo",
+      "img": "img/tao.jpg",
+      "price": "20000",
+      "quantity": "200",
+      "createAt": "2025"
+    },
+    {
+      "id": "3",
+      "name": "Chuối",
+      "img": "img/chuoi.jpg",
+      "price": "15000",
+      "quantity": "150",
+      "createAt": "2025"
+    },
+    {
+      "id": "4",
+      "name": "Xoài",
+      "img": "img/xoai.jpg",
+      "price": "25000",
+      "quantity": "120",
+      "createAt": "2025"
+    },
+    {
+      "id": "5",
+      "name": "Dưa hấu",
+      "img": "img/duahau.jpg",
+      "price": "30000",
+      "quantity": "80",
+      "createAt": "2025"
+    }
+  ],
+  "student": [
+    {
+      "id": "3",
+      "name": "Tran Thi Bich",
+      "email": "tranthibich@gmail.com",
+      "address": "Đà Nẵng",
+      "phone": "0978123456",
+      "status": true,
+      "create_at": "2025"
+    },
+    {
+      "id": "4",
+      "name": "Le Van Cuong",
+      "email": "levancuong@gmail.com",
+      "address": "Hải Phòng",
+      "phone": "0909876543",
+      "status": true,
+      "create_at": "2025"
+    },
+    {
+      "id": "5",
+      "name": "Pham Thi Dao",
+      "email": "phamthidao@gmail.com",
+      "address": "Cần Thơ",
+      "phone": "0965432187",
+      "status": false,
+      "create_at": "2025"
+    },
+    {
+      "id": "6",
+      "name": "Nguyen Van E",
+      "email": "nguyenvane@gmail.com",
+      "address": "Hue",
+      "phone": "0911112222",
+      "status": true,
+      "create_at": "2025"
+    },
+    {
+      "id": "7",
+      "name": "Nguyen Van E",
+      "email": "nguyenvane@gmail.com",
+      "address": "Hue",
+      "phone": "0911112222",
+      "status": true,
+      "create_at": "2025"
+    },
+    {
+      "id": "8",
+      "name": "Nguyen hoang Ha5",
+      "address": "0o0o0o0",
+      "phone": "555-1234",
+      "status": true,
+      "createdAt": "2025-09-16T01:59:16.945Z"
+    }
+  ]
+}
