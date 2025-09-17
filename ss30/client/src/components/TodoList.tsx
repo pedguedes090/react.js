@@ -294,7 +294,9 @@ function TodoList() {
         overflow: 'hidden',
         boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
         marginBottom: '20px',
-        minHeight: '200px'
+        minHeight: '200px',
+        maxHeight: '320px', 
+        overflowY: 'auto'   
       }}>
         {tasks.length === 0 ? (
           <div style={{
@@ -314,7 +316,8 @@ function TodoList() {
                 alignItems: 'center',
                 padding: '16px',
                 borderBottom: index === tasks.length - 1 ? 'none' : '1px solid #f0f0f0',
-                gap: '12px'
+                gap: '12px',
+                minHeight: '56px' 
               }}
             >
               <input 
@@ -334,7 +337,8 @@ function TodoList() {
                 flex: 1,
                 margin: 0,
                 fontSize: '14px',
-                color: task.status === 'completed' ? '#999' : '#333'
+                color: task.status === 'completed' ? '#999' : '#333',
+                
               }}>
                 {task.title}
               </p>
