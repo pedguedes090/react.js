@@ -1,0 +1,32 @@
+{
+  "possts": [
+    {
+      "id": "1",
+      "title": "first posto0",
+      "img": "https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_incoming&w=740&q=80",
+      "date": "2023/10/10",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "title": "sada",
+      "img": "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg",
+      "date": "18/9/2025",
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "title": "sadafd",
+      "img": "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg",
+      "date": "18/9/2025",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "title": "sadafd",
+      "img": "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg",
+      "date": "18/9/2025",
+      "status": "active"
+    }
+  ]
+}
