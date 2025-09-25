@@ -1,0 +1,16 @@
+{
+  "task": [
+    {
+      "id": "1",
+      "title": "Học Redux Toolkit",
+      "completed": false,
+      "priority": "high"
+    },
+    {
+      "id": "2",
+      "title": "Làm bài tập TS",
+      "completed": true,
+      "priority": "medium"
+    }
+  ]
+}
