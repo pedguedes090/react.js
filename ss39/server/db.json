@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "name": "test",
+      "price": 850000,
+      "description": "áaasdfasdf",
+      "imageUrl": "https://res.cloudinary.com/dyqvxjcfp/image/upload/v1759206420/yntppphua4wunapmumxs.jpg",
+      "id": 1
+    }
+  ]
+}
