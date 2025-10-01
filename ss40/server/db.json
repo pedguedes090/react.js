@@ -1,0 +1,53 @@
+{
+  "category": [
+    {
+      "id": "1",
+      "name": "Frontend Development",
+      "description": "Learn HTML, CSS, JavaScript, and modern frameworks like React or Vue.",
+      "status": "active"
+    },
+    {
+      "name": "Backend Development",
+      "description": "Focus on Node.js, databases, and API design for scalable applications.",
+      "status": "active",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "UI/UX Design",
+      "description": "Principles of creating user-friendly and visually appealing interfaces.",
+      "status": "inactive"
+    },
+    {
+      "id": "4",
+      "name": "Mobile Apps",
+      "description": "Build mobile applications with Flutter, React Native, or native SDKs.",
+      "status": "inactive"
+    },
+    {
+      "name": "Backend Development",
+      "description": "Focus on Node.js, databases, and API design for scalable applications.sss",
+      "status": "active",
+      "id": "31eef8f1-4537-4eaa-ba57-8e0e16e6911c"
+    }
+  ],
+  "product": [
+    {
+      "id": "p1",
+      "code": "PRD-001",
+      "name": "iPhone 15 Pro0",
+      "category": "Smartphone",
+      "price": 1200,
+      "image": "https://example.com/images/iphone15pro.jpg",
+      "status": "active"
+    },
+    {
+      "code": "đss",
+      "name": "sđss",
+      "price": "233232",
+      "status": "inactive",
+      "id": "5468b372-8bb3-4397-ab98-35f9a50016f1",
+      "image": "https://res.cloudinary.com/dll6mpwhk/image/upload/v1759284910/%E1%BA%A3nh_chi%E1%BA%BFn_c%C6%A1_ee2wlb.webp"
+    }
+  ]
+}
